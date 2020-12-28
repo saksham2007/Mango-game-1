@@ -13,7 +13,7 @@ class Tree
         this.height=height
 
 this.image=loadImage("images/tree.png")
-this.body=Bodies.rectangle(this.x,this.y,this.width,this.height,options)
+this.body=Bodies.rectangle(this.x,this.y,this.width/20,this.height/20,options)
 World.add(world,this.body)
     }
     display(){
