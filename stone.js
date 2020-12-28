@@ -2,12 +2,12 @@ class Stone
 {
     constructor(x,y,r){
         var options={
-            isStatic:true,
+            isStatic:false,
             restitution:0,
-            friction:1,
+            friction:2,
             density:1.2
         }
-        this.body=Bodies.circle(x,y,r,options)
+        this.body=Bodies.circle(x,y,r/2,options)
         this.image=loadImage("images/stone.png")
         this.r=r
          World.add(world,this.body)
