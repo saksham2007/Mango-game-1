@@ -32,7 +32,7 @@ function setup() {
 
 	ground1 =new Ground(400,height,799,20);
 
-	tree1 = new Tree(500,350)
+	tree1 = new Tree(500,350,20,20)
 
 	boy = createSprite(100,610,20,20)
 	boy.addImage(boyImage)
