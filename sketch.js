@@ -21,7 +21,7 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-    Constraintstone =new Stone(280,180,80,PI/2)
+    Constraintstone =new Stone(330,180,80,PI/2)
 
 	stone1 =new Stone(40,550,30)
 
@@ -34,11 +34,11 @@ function setup() {
 
 	tree1 = new Tree(500,350,20,20)
 
-	boy = createSprite(100,610,20,20)
+	boy = createSprite(150,610,20,20)
 	boy.addImage(boyImage)
 	boy.scale=0.12
 
-	launcher = new Launcher(stone1.body,{x:40, y:550});
+	launcher = new Launcher(stone1.body,{x:90, y:530});
 
 	
 	Engine.run(engine);
@@ -84,7 +84,7 @@ function mouseReleased(){
 
 function keyPressed(){
 	if(keyCode===32){
-		Matter.Body.setPosition(stone1.body,{x:40,y:550})
+		Matter.Body.setPosition(stone1.body,{x:90,y:550})
 		launcher.attach(stone1.body)
 	}
 }
